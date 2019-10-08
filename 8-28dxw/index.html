@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        padding-top: 30px;
+        width: 1000px;
+        height: 600px;
+        background: rgb(220, 243, 185);
+        margin: 0 auto;
+        text-align: center;
+    }
+.heng{
+ width:100%;
+ height: 150px;
+ /* border: 1px solid pink; */
+ display: flex;
+ list-style-type: none;
+ position: relative;
+ left: -50px;
+}
+.heng li{
+    width: 33%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.crl{
+width: 30px;
+height: 30px;
+background: blue;
+border-radius: 50%;
+margin: 0 auto;
+}
+.line1{
+    width: 200px;
+    height: 3px;
+    background: green;
+    transform: rotateZ(-15deg);
+    position: relative;
+    left: 200px;
+    top: 150px;
+}
+.line2{
+    width: 200px;
+    height: 3px;
+    background: green;
+    transform: rotateZ(15deg);
+    position: relative;
+    left: -80px;
+    top: 150px;
+}
+.line3{
+    width: 550px;
+    height: 3px;
+    background: green;
+    position: relative;
+    left: 200px;
+    top: 40px;
+}
+.line4{
+    width: 250px;
+    height: 3px;
+    background: green;
+    transform: rotateZ(25deg);
+    position: relative;
+    left: 200px;
+    top: -60px;
+}
+.line5{
+    width: 250px;
+    height: 3px;
+    background: green;
+    transform: rotateZ(-25deg);
+    position: relative;
+    left: -150px;
+    top: -60px;
+}
+.line6{
+    width: 100px;
+    height: 3px;
+    background: green;
+    margin-left: 30px;
+    position: relative;
+    top: 15px;
+}
+.line6-2{
+    background:red;
+}
+.line6-3{
+    background:yellow;
+}
+</style>
+<body>
+    <div class="box">
+        <h2>容器可靠性项目</h2>
+        <ul class="heng">
+            <li>
+                <div class="line1">
+                    
+                </div>
+            </li>
+            <li>
+                <div>
+                    
+                        <img style="width:100px;height:80px;border-radius: 50%" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1917474137,90944071&fm=26&gp=0.jpg" alt="">
+                        <div class="crl"></div>
+                        <h4>MASTER</h4>
+                    </div>
+            </li>
+            <li>
+                <div class="line2">
+
+                </div>
+            </li>
+        </ul>
+        <div class="line3"></div>
+        <ul class="heng">
+                <li>
+                    <div>
+                            <!-- <img style="width:100px;height:80px" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1917474137,90944071&fm=26&gp=0.jpg" alt=""> -->
+                            <div class="crl"></div>
+                            <h4>SLAVE1</h4>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        
+                          
+                        </div>
+                </li>
+                <li>
+                    <div>
+                            <div class="crl"></div>
+                            <h4>SLAVE3</h4>
+                    </div>
+                </li>
+            </ul>
+            <ul class="heng">
+                    <li>
+                        <div>
+                            <div class="line4"></div>
+                            <div class="line6"></div> <span>正常</span><br>
+                            <div class="line6 line6-2"></div> <span>故障</span><br>
+                            <div class="line6 line6-3"></div> <span>处理中</span><br>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                                <div class="crl"></div>
+                                <h4>SLAVE3</h4>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="line5">
+
+                        </div>
+                    </li>
+                </ul>
+    </div>
+</body>
+</html>
